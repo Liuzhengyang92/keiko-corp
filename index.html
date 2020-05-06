@@ -67,7 +67,7 @@
       document.createStylesheet(src)
     } else {
       const stylesheet = document.createElement('link');
-      stylesheet.href = 'css/bootstrap.css';
+      stylesheet.href = src;
       stylesheet.type = 'text/css';
       stylesheet.rel = 'stylesheet';
       document.getElementsByTagName('head')[0].appendChild(stylesheet)
@@ -75,7 +75,7 @@
   }
 
   window.onload = function () {
-    loadStyleSheet('./styles3.css') // here to give the relative path 
+    loadStyleSheet('css/bootstrap.css') // here to give the relative path 
     // of the CSS file that we need to load
   }
 </script>
